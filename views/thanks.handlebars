@@ -1,0 +1,31 @@
+<div class="icare">
+    <a href="/"><h3>HOME</h3></a>
+    <a id="logout" href="/logout"><h3>LOGOUT</h3></a>
+</div>
+<div class="certificate">
+<div class="certName">
+    {{name}}
+</div>
+        <img id="sigContainer" src="{{sig}}" alt="view"></img>
+
+        <div class="cert-bottom">
+            {{name}}
+        </div>
+</div>
+
+
+
+<div class="certOption">
+    <h3><a href="/signers">CLICK HERE TO SEE YOUR FELLOW {{count}} SIGNERS</a></h3>
+    <h3><a href="/profile/edit">EDIT YOUR PROFILE</a> <br></h3>
+
+    <form class="sigDelete" action="/delete" method="post">
+        <button class="sigDelete" type="submit" name="sigDelete">
+            <h2>EDIT YOUR SIGNATURE</h2>
+        </button>
+        <input id="hiddenSig" type="hidden" name="sig">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+    </form>
+
+</div>

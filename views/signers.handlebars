@@ -1,0 +1,24 @@
+<div class="icare">
+    <a href="/"><h3>HOME</h3></a>
+    <a id="logout" href="/logout"><h3>LOGOUT</h3></a>
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Princess+Sofia" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+
+
+<div class="signersColDiv">
+    <h1>Hall of Fame</h1>
+</div>
+
+<div class="city">
+    {{city}}
+</div>
+
+<div id="signersCol">
+
+{{#each signers}}
+<p>{{this.first}} {{this.last}} <span>{{this.age}}</span> <em><a href="/signers/{{this.city}}">{{this.city}}</a></em> </p>
+{{/each}}
+</div>

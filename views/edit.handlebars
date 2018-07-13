@@ -1,0 +1,39 @@
+<div class="icare">
+    <a href="/"><h3>HOME</h3></a>
+    <a id="logout" href="/logout"><h3>LOGOUT</h3></a>
+</div>
+
+
+
+<div class="formE">
+<form class="" action="/profile/edit" method="post">
+<h3>Hello {{ signer.first }}!</h3>
+
+        <input autocomplete="off" type="text" name="first" placeholder="First Name" value="{{signer.first}}">
+        <input autocomplete="off" type="text" name="last" placeholder="Last Name" value="{{signer.last}}">
+        <input autocomplete="off" type="email" name="email" placeholder="Email Address" value="{{signer.email}}">
+        <input autocomplete="off" type="password" name="password" placeholder="Password">
+        <input autocomplete="off" type="number" name="age" placeholder="Age" value="{{signer.age}}">
+        <input autocomplete="off" type="text" name="city" placeholder="City" value="{{signer.city}}">
+        <input autocomplete="off" type="text" name="homepage" placeholder="Homepage" value="{{signer.homepage}}">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="error ldt-fall-in ld">
+            {{#error}}
+            <p>Uh oh, something went wrong. Please try again</p>
+            {{/error}}
+        </div>
+
+        <button id="submit" class="btn green" type="submit" name="submit">Update</button>
+        </form>
+        <div class="facts">
+            <div id="know">
+            Did you know?<br>
+            </div>
+            ``<em>{{facts}}</em>``
+        </div>
+
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/form.js"></script>

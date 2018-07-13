@@ -1,0 +1,30 @@
+<div class="icare">
+    <a href="/"><h3>HOME</h3></a>
+    <a id="logout" href="/logout"><h3>LOGOUT</h3></a>
+</div>
+
+<form class="" action="/profile" method="post">
+<div id="profile-container">
+    <div class="formP">
+        <h3>Tell us something about you</h3>
+        <input autocomplete="off" type="number" name="age" placeholder="Age">
+        <input autocomplete="off" type="text" name="city" placeholder="City">
+        <input autocomplete="off" type="text" name="homepage" placeholder="Homepage">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <div class="error ldt-fall-in ld">
+            {{#error}}
+            <p>Uh oh, something went wrong. Please try again</p>
+            {{/error}}
+        </div>
+        <button id="submit" class="btn green" type="submit" name="submit">Submit</button>
+        <button id="clear" class="btn green" type="button" name="clear">Clear</button>
+
+    </div>
+</div>
+
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/form.js"></script>

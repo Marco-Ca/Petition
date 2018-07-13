@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/stylesheet.css">
+
+    <div class="icare">
+        <a href="/"><h3>HOME</h3></a>
+    </div>
+
+
+<form class="" action="/register" method="post">
+
+    <img id="logo" src="/images/tree.png"></img>
+    <div class="form">
+        <h2>Sign Up</h2>
+        <h4>Help make the world a better place</h4>
+        <input autocomplete="off" type="text" name="first" placeholder="First Name" required>
+        <input autocomplete="off" type="text" name="last" placeholder="Last Name" required>
+        <input autocomplete="off" type="email" name="email" placeholder="Email Address" required>
+        <input autocomplete="off" type="password" name="password" placeholder="Password" required>
+        <input autocomplete="off" type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="error ldt-fall-in ld">
+            {{#error}}
+            <p>Uh oh, something went wrong. Please try again</p>
+            {{/error}}
+        </div>
+
+    <button id="submit" class="btn green" type="submit" name="submit">Sign Up</button>
+    <button id="clear" class="btn green" type="button" name="clear">Clear</button>
+    </form>
+    <div class="member">
+        <p>If you are already a member, please <a href="/login">log in</a>.</p>
+    </div>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/form.js"></script>

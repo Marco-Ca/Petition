@@ -3,7 +3,7 @@
 ### Table of contents
 
 *   [Overview](#overview)
-*   [Description](#description)
+*   [Demo](#demo)
 
 ### Overview
 
@@ -15,7 +15,7 @@ Technologies used:
 *   Node/Express
 *   PostgreSQL
 *   Express Handlebars
-
+### Demo
 <p align="center">
 <img src="gifs/petition1.gif"/>
 <br/>

@@ -2,40 +2,37 @@
 <div class="icare">
     <a href="/"><h3>HOME</h3></a>
 </div>
-
-
 <form class="" action="/login" method="post">
-<img id="logo" src="/images/earth.png"></img>
 
-
+    <img id="logo" src="/images/earth.png"></img>
 
     <div class="formL">
         <h3>Welcome back!</h3>
-
         <input autocomplete="off" type="email" name="email" placeholder="Email Address" required>
         <input autocomplete="off" type="password" name="password" placeholder="Password" required>
         <input type="hidden" name="_csrf" value="{{csrfToken}}">
-
         <div class="error ldt-fall-in ld">
             {{#error}}
             <p>Uh oh, something went wrong. Please try again</p>
             {{/error}}
         </div>
 
-        <button id="submit" class="btn green" type="submit" name="submit">Log in</button>
-        <button id="clear" class="btn green" type="button" name="clear">Clear</button>
-        </form>
-        <div class="notMember">
-            <p>Not yet a member? Click <a href="/register">here</a> to register.</p>
-        </div>
+    <button id="submit" class="btn green" type="submit" name="submit">Log in</button>
+    <button id="clear" class="btn green" type="button" name="clear">Clear</button>
+
+</form>
+
+<div class="notMember">
+    <p>Not yet a member? Click <a href="/register">here</a> to register.</p>
+</div>
+
     </div>
 
     <div class="loginNote">
         <div id='warped'>
                <span class='w0'>T</span><span class='w1'>h</span><span class='w2'>e</span><span class='w3'> </span><span class='w4'>w</span><span class='w5'>o</span><span class='w6'>r</span><span class='w7'>l</span><span class='w8'>d</span><span class='w9'> </span><span class='w10'>i</span><span class='w11'>s</span><span class='w12'> </span><span class='w13'>i</span><span class='w14'>n</span><span class='w15'> </span><span class='w16'>o</span><span class='w17'>u</span><span class='w18'>r</span><span class='w19'> </span><span class='w20'>h</span><span class='w21'>a</span><span class='w22'>n</span><span class='w23'>d</span><span class='w24'>s</span><span class='w25'>,</span><span class='w26'> </span><span class='w27'>t</span><span class='w28'>a</span><span class='w29'>k</span><span class='w30'>e</span><span class='w31'> </span><span class='w32'>c</span><span class='w33'>a</span><span class='w34'>r</span><span class='w35'>e</span><span class='w36'> </span><span class='w37'>o</span><span class='w38'>f</span><span class='w39'> </span><span class='w40'>i</span><span class='w41'>t</span><span class='w42'>.</span>
         </div>
-        </div>
-
-
+    </div>
+    
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="/form.js"></script>

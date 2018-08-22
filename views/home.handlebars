@@ -1,43 +1,29 @@
-<div class="ban">
-</div>
+<div class="ban"></div>
 
 <div class="petition-signature">
     <h3><strong>By signing this petition, I hereby declare myself <br>
-                plastic-free from this moment onwards.
-                </strong></h3>
-     <hr>
+                plastic-free from this moment onwards.</strong>
+    </h3><hr>
 </div>
 
-
 <form class="" action="/petition" method="post">
-
     <div class="formS">
         <h2><strong>{{name}}</strong></h2>
         <input id="hiddenSig" type="hidden" name="sig">
         <input type="hidden" name="_csrf" value="{{csrfToken}}">
     </div>
-
-
-
     <canvas id="sigCanvas" width="300" height="100" name="sig"></canvas>
-
-
-
-</div>
-
-<div class="error ldt-fall-in ld">
-    {{#error}}
-    <p>Uh oh, something went wrong. Please try again</p>
-    {{/error}}
-</div>
-
-<button id="submit" class="btn green" type="submit" name="submit">Submit</button>
-<button id="clear" class="btn green" type="button" name="clear">Clear</button>
-
+    <div class="error ldt-fall-in ld">
+        {{#error}}
+        <p>Uh oh, something went wrong. Please try again</p>
+        {{/error}}
+    </div>
+    <button id="submit" class="btn green" type="submit" name="submit">Submit</button>
+    <button id="clear" class="btn green" type="button" name="clear">Clear</button>
 </form>
 
 {{#each error}}
-<p>Uh oh, something went wrong. Try again</p>
+    <p>Uh oh, something went wrong. Try again</p>
 {{/each}}
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

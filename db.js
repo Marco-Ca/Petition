@@ -19,7 +19,6 @@ module.exports.toAddInfo = function toAddInfo(age, city, homepage, user_id) {
     );
 };
 
-
 module.exports.signPetition = function signPetition(sig, user_id) {
     return db.query(
         `INSERT INTO signatures (signature, user_id)
